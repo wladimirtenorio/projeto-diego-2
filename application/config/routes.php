@@ -59,5 +59,30 @@ $route['Admin/usuario_listar'] = "AdminController/usuario_listar";
 $route['Admin/index'] = "AdminController/index";
 $route['Admin/usuario_cadastrar'] = "AdminController/usuario_cadastrar";
 
+// até a parte de cima tá ok // 
+
+$route['Admin/listar_autores'] = "AdminController/listar_autores"; //revisar// 
+
+
+$route['Admin/obra_novos'] = "AdminController/obra_novos"; //revisar// 
+
+
+$route['Admin/emprestimo'] = "AdminController/emprestimo"; //revisar// 
+
+
+
+// $route['Admin/index'] = "AdminController/index";
+// $route['Admin/livro_excluir'] = "AdminController/livro_excluir";
+
+// $route['Admin/index'] = "AdminController/index";
+// $route['Admin/livro_listar'] = "AdminController/livro_listar";
+
+// $route['Admin/index'] = "AdminController/index";
+// $route['Admin/livro_novo'] = "AdminController/livro_novo";
+
+// $route['Admin/index'] = "AdminController/index";
+// $route['Admin/livro_salvar'] = "AdminController/livro_salvar";
+
+
 
 

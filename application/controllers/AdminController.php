@@ -56,50 +56,35 @@ class AdminController extends CI_Controller {
 
 	// a parte de cima tá ok// 
 
-		public function livro_listar(){
-		$dados['livro'] = $this->usuario->get();
+		public function listar_autores(){
+		$dados['usuario'] = $this->usuario->get();
 		$this->load->view('componentes/header',$dados);
 		$this->load->view('componentes/sidebar');
-		$this->load->view('livro_listar',$dados);
+		$this->load->view('usuario_listar',$dados);
 		$this->load->view('componentes/footer');
 	}
 
-public function livro_excluir(){
-		$dados['livro'] = $this->usuario->get();
-		$this->load->view('componentes/header',$dados);
-		$this->load->view('componentes/sidebar');
-		$this->load->view('livro_excluir',$dados);
-		$this->load->view('componentes/footer');
-	}
-
-	public function livro_salvar(){
-		$dados['livro'] = $this->usuario->get();
-		$this->load->view('componentes/header',$dados);
-		$this->load->view('componentes/sidebar');
-		$this->load->view('livro_salvar',$dados);
-		$this->load->view('componentes/footer');
-	}
-
-	public function livro_novo(){
-		$dados['livro'] = $this->usuario->get();
-		$this->load->view('componentes/header',$dados);
-		$this->load->view('componentes/sidebar');
-		$this->load->view('livro_novo',$dados);
-		$this->load->view('componentes/footer');
-	}
 
 	
-	//public function obra_novo(){
-    // $parametros['titulo'] = 'Nova Postagem';
-    // $this->load->view('cabecalho',$parametros);
-    // $this->load->view('postagem/novo',$parametros);
-    // $this->load->view('rodape');
-	//}
+	public function obra_novos(){
+    $parametros['titulo'] = 'Nova Postagem';
+  	$this->load->view('componentes/header',$dados);
+	$this->load->view('componentes/sidebar');
+	$this->load->view('obra_novos',$dados);
+	$this->load->view('componentes/footer');
+	}
 
-	// public function obra_novo_salvar(){
-
-	// }
+	// public function obra_novos_salvar(){ 
 
 
+	//  }
+
+	public function emprestimo(){
+	$dados['emprestimo'] = $this->usuario->get();
+  	$this->load->view('componentes/header',$dados);
+	$this->load->view('componentes/sidebar');
+	$this->load->view('emprestimo');
+	$this->load->view('componentes/footer');
+	}
 
 }

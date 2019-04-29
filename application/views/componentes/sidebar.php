@@ -45,14 +45,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </li>
 
                                 <li>
-                                    <a href="obra_novo.php">
+                                    <a href="<?php echo base_url('Admin/obra_novos');?>">
                                         <i class=""></i>
                                         <span>Cadastrar Autor/Livro</span>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="emprestimos.php">
+                                    <a href="<?php echo base_url('Admin/emprestimo');?>">
                                         <i class=""></i>
                                         <span>Empréstimos</span>
                                     </a>
