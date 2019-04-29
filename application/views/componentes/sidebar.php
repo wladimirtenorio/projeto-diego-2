@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </a>
                             </li>
                             <li>
-                                <a href="obra_listar.php">
+                                <a href="<?php echo base_url('Admin/listar_autores');?>">
                                     <i class=""></i>
                                     <span>Listar Autores/Livros</span>
                                 </a>
@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                                 <li>
-                                    <a href="usuario_cadastrar.php">
+                                    <a href="<?php echo base_url('Admin/usuario_cadastrar');?>">
                                         <i class=""></i>
                                         <span>Cadastrar Usuários</span>
                                     </a>
@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                                 <li>
-                                    <a href="usuario_listar.php">
+                                    <?=anchor('Admin/usuario_listar','Lista de Usário');?>
                                         <i class=""></i>
                                         <span>Listar Usuários</span>
                                     </a>

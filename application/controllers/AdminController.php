@@ -27,20 +27,79 @@ class AdminController extends CI_Controller {
 		$this->load->view('area_admin');
 		$this->load->view('componentes/footer');
 	}
-	public function usuario_listar(){
 
-		$dados['wlad'] = $this->usuario->listar();
+// public function listar_autores(){
+// 		$dados['usuario'] = $this->usuario->get();
+// 		$this->load->view('componentes/header',$dados);
+// 		$this->load->view('componentes/sidebar');
+// 		$this->load->view('usuario_listar',$dados);
+// 		$this->load->view('componentes/footer');
+// 	}
+
+
+	public function usuario_cadastrar(){
+		$dados['usuario'] = $this->usuario->get();
 		$this->load->view('componentes/header',$dados);
 		$this->load->view('componentes/sidebar');
-		$this->load->view('usuario_listar');
+		$this->load->view('usuario_cadastrar',$dados);
 		$this->load->view('componentes/footer');
 	}
+
+
+	public function usuario_listar(){
+		$dados['usuario'] = $this->usuario->get();
+		$this->load->view('componentes/header',$dados);
+		$this->load->view('componentes/sidebar');
+		$this->load->view('usuario_listar',$dados);
+		$this->load->view('componentes/footer');
+	}
+
+	// a parte de cima tá ok// 
+
+		public function livro_listar(){
+		$dados['livro'] = $this->usuario->get();
+		$this->load->view('componentes/header',$dados);
+		$this->load->view('componentes/sidebar');
+		$this->load->view('livro_listar',$dados);
+		$this->load->view('componentes/footer');
+	}
+
+public function livro_excluir(){
+		$dados['livro'] = $this->usuario->get();
+		$this->load->view('componentes/header',$dados);
+		$this->load->view('componentes/sidebar');
+		$this->load->view('livro_excluir',$dados);
+		$this->load->view('componentes/footer');
+	}
+
+	public function livro_salvar(){
+		$dados['livro'] = $this->usuario->get();
+		$this->load->view('componentes/header',$dados);
+		$this->load->view('componentes/sidebar');
+		$this->load->view('livro_salvar',$dados);
+		$this->load->view('componentes/footer');
+	}
+
+	public function livro_novo(){
+		$dados['livro'] = $this->usuario->get();
+		$this->load->view('componentes/header',$dados);
+		$this->load->view('componentes/sidebar');
+		$this->load->view('livro_novo',$dados);
+		$this->load->view('componentes/footer');
+	}
+
 	
-	public function obra_novo(){
+	//public function obra_novo(){
+    // $parametros['titulo'] = 'Nova Postagem';
+    // $this->load->view('cabecalho',$parametros);
+    // $this->load->view('postagem/novo',$parametros);
+    // $this->load->view('rodape');
+	//}
 
-	}
+	// public function obra_novo_salvar(){
 
-	public function obra_novo_salvar(){
+	// }
 
-	}
+
+
 }
